@@ -1,0 +1,30 @@
+{
+	"name": "loence.com",
+	"version": "1.0.0-beta",
+	"description": "Loence Website",
+	"scripts": {
+		"build-ejs": "node scripts/build-ejs.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/loence/loence.com.git"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Feroz Ahmmed",
+		"email": "froghramar@gmail.com"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/loence/loence.com/issues"
+	},
+	"homepage": "https://github.com/loence/loence.com#readme",
+	"dependencies": {
+		"ejs": "^2.6.1",
+		"fs-extra": "^7.0.1",
+		"webpack": "^4.29.0"
+	},
+	"devDependencies": {
+		"@types/fs-extra": "^5.0.4"
+	}
+}

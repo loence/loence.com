@@ -1,0 +1,7 @@
+# IDE and Plugins
+.idea
+
+# Output
+dist
+package-lock.json
+node_modules
