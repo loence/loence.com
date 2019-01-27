@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600);
+
+.teammate{
+	width:100%;
+	max-width:380px;
+	margin:0 auto 30px auto;
+	text-align:center
+}
+.teammate .teammate-thumb{
+	position:relative;
+	width:100%;
+	margin-bottom:24px;
+	overflow:hidden
+}
+.teammate .teammate-thumb>img{
+	display:block;
+	width:100%;
+	opacity:1;
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-ms-transform:scale(1);
+	-o-transform:scale(1);
+	transform:scale(1);
+	-webkit-transition:all 0.5s;
+	-o-transition:all 0.5s;
+	transition:all 0.5s
+}
+.teammate .teammate-name{
+	font-size:16px;
+	font-weight:normal;
+	margin-bottom:6px
+}
+.teammate .teammate-position{
+	color:#999;
+	font-size:14px;
+	font-weight:normal
+}
+.teammate .social-bar{
+	position:absolute;
+	z-index:1;
+	width:100%;
+	top:50%;
+	left:0;
+	opacity:0;
+	-webkit-transform:translateY(-25%);
+	-moz-transform:translateY(-25%);
+	-ms-transform:translateY(-25%);
+	-o-transform:translateY(-25%);
+	transform:translateY(-25%);
+	-webkit-transition:all 0.3s;
+	-o-transition:all 0.3s;
+	transition:all 0.3s
+}
+.teammate:hover .teammate-thumb>img{
+	opacity:.25;
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+	-ms-transform:scale(1.1);
+	-o-transform:scale(1.1);
+	transform:scale(1.1)
+}
+.teammate:hover .social-bar{
+	opacity:1;
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	transform:translateY(-50%)
+}
