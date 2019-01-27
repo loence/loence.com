@@ -4494,8 +4494,17 @@
      width:100%;
      display: block;
      padding: 10px 18px;
-     border: 1px solid rgba(0,0,0,.1);
+
 }
+
+.panel-title-boder-bottom {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.panel-title-boder-top {
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
  .panel-body {
      padding:10px 18px 25px 18px;
      font-size: 13px;
@@ -4548,13 +4557,13 @@
      top: 1px 
 }
  .toggles-style2 .panel-title {
-     background-color:#000;
-     color: #fff
+     background-color: whitesmoke;
+     color: black;
 }
  .toggles-style2 .panel-heading i {
      font-size:18px;
      margin: 0;
-     color:#fff;
+     color: black;
      padding-top:5px
 }
  .toggles-style3 {
@@ -8437,6 +8446,88 @@ body {
     line-height: 26px;
 }
 
-.panel-body { padding:0px; }
-.panel-body table tr td { padding-left: 15px }
-.panel-body .table {margin-bottom: 0px; }
+.usermanual-body {
+    padding-top: 79px;
+}
+
+.usermanual-panel {
+    padding-bottom: 0px !important;
+}
+
+.usermanual-panelbody {
+    background-color: whitesmoke;
+}
+
+.usermanual-panel-fixed {
+    position: fixed;
+    width: 22%;
+    margin-top: 40px;
+}
+
+.panel-head {
+    text-align: center;
+    background-color: #d6d2d2;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.usermanual-rightbar {
+    padding-left: 10px;
+    position: fixed;
+    width: 13%;
+    margin-top: 40px;
+    border-left: 3px solid orange;
+}
+
+.usermanual-sub-header {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.usermanual-p {
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.umrlist {
+    margin: 0px !important;
+    letter-spacing: 1px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.usermanual-sub-header-2 {
+    margin-top: 40px;
+    font-weight: 600 !important;
+    font-size: 18px;
+}
+
+.usermanual-li {
+    font-size: 15px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.toc-submenu {
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: #28a1da !important;
+}
+
+.usermanual-hover:hover {
+    color: #28a1da
+}
+
+.separator-line-2 {
+    height: 2px;
+    margin: 0 auto;
+    width: 30px;
+    margin: 3% auto;
+}
