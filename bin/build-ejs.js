@@ -28,7 +28,7 @@ ejsFiles.forEach(function (ejsFilePath) {
 
         const outPutHtmlPath = './dist/' + ejsFilePath.split('.ejs').join('.html');
 
-        mkdirp(path.dirname(outPutHtmlPath)).then(err => {
+        mkdirp(path.dirname(outPutHtmlPath), err => {
 
             if (err) {
                 console.error(err);
