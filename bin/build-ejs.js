@@ -1,4 +1,5 @@
 const fs = require('fs-extra');
+const mkdirp = require('mkdirp');
 const path = require('path');
 const ejs = require('ejs');
 
@@ -27,7 +28,12 @@ ejsFiles.forEach(function (ejsFilePath) {
 
         const outPutHtmlPath = './dist/' + ejsFilePath.split('.ejs').join('.html');
 
-        fs.promises.mkdir(path.dirname(outPutHtmlPath), {recursive: true}).then(x => {
+        mkdirp(path.dirname(outPutHtmlPath), err => {
+
+            if (err) {
+                console.error(err);
+            }
+
             fs.writeFile(outPutHtmlPath, str, function (err) {
                 if (err) {
                     console.error(err);
