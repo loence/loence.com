@@ -3,7 +3,7 @@
 	"version": "1.0.0-beta",
 	"description": "Loence Website",
 	"scripts": {
-		"build-ejs": "node scripts/build-ejs.js"
+		"build-ejs": "node bin/build-ejs.js"
 	},
 	"repository": {
 		"type": "git",
