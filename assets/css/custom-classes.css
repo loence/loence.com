@@ -6,19 +6,6 @@
     padding-top: 30px;
 }
 
-.tour-cate-box {
-    background-color: #fff;
-    text-align: center;
-    padding: 1em;
-    border-color: #e3ebfc;
-    box-shadow: 0 0.75rem 1.625rem 0 rgba(54,141,255,.1);
-    border-width: .0625rem;
-    border-style: solid;
-    border-radius: .5rem;
-    display: flex;
-    align-items: center;
-}
-
 .col2 {
     width: calc(100%/2 - 5px);
     float: left;
@@ -44,8 +31,14 @@
     border-width: .0625rem;
     border-style: solid;
     border-radius: .5rem;
-    display: flex;
     align-items: center;
+    display: flex;
+}
+
+@media (max-width: 992px) {
+    .tour-cate-box {
+        display: grid !important;
+    }
 }
 
 .fl-left {
