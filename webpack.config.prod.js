@@ -7,14 +7,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: {
         main: "./src/js/main.js"
     },
 
     output: {
-        filename: '[name].js',
-        chunkFilename: '[name].js',
+        filename: '[name].[chunkhash].js',
+        chunkFilename: '[name].[chunkhash].js',
         path: path.resolve(__dirname, 'dist')
     },
     resolve: {
@@ -86,7 +86,6 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         new ExtractTextPlugin('style.css'),
         new UglifyJSPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
         new HtmlWebpackPlugin({
             inject: true,
             template: './src/ejs/index.ejs',
@@ -103,8 +102,7 @@ module.exports = {
         })],
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        hot: true,
-        port: 8080
-    },
-    devtool: 'inline-source-map',
+        compress: true,
+        port: 9000
+    }
 }
