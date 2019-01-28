@@ -6,7 +6,7 @@ const assets = [
 ];
 
 assets.forEach(assetDir => {
-    ncp('./' + assetDir, './dist/' + assetDir, err => {
+    ncp('./src/' + assetDir, './dist/' + assetDir, err => {
         if (err) {
             console.error(err);
             return;
