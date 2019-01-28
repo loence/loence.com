@@ -5,7 +5,8 @@
 	"scripts": {
 		"build-ejs": "node bin/build-ejs.js",
 		"copy-assets": "node bin/copy-assets.js",
-		"build": "npm run build-ejs && npm run copy-assets"
+		"build": "npm run build-ejs && npm run copy-assets",
+		"start": "http-server ./dist"
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +32,7 @@
 	"devDependencies": {
 		"@types/fs-extra": "^5.0.4",
 		"@types/mkdirp": "^0.5.2",
-		"@types/ncp": "^2.0.1"
+		"@types/ncp": "^2.0.1",
+		"http-server": "^0.11.1"
 	}
 }
