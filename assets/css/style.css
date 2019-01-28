@@ -8404,6 +8404,9 @@ body {
         .width-90 {
             width: 100% !important;
         }
+        .mob-padding {
+            padding-left: 30px;
+        }
     }
 
 @media (min-width: 767px) {
