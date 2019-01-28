@@ -8493,7 +8493,7 @@ body {
 .umrlist {
     margin: 0px !important;
     letter-spacing: 1px;
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 600;
 }
 
@@ -8530,4 +8530,9 @@ body {
     margin: 0 auto;
     width: 30px;
     margin: 3% auto;
+}
+
+.newmargin10-5 {
+    margin-top: 10% !important;
+    margin-bottom: 5% !important;
 }
