@@ -5,7 +5,7 @@ import 'modernizr';
 import 'bootstrap';
 import 'bootstrap-hover-dropdown';
 import '../scripts/jquery.easing.1.3';
-import '../scripts/skrollr.min';
+import 'skrollr.min';
 import '../scripts/smooth-scroll';
 import '../scripts/jquery.appear';
 import '../scripts/wow.min';

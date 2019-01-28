@@ -30,7 +30,8 @@
 		"jquery.easing": "^1.4.1",
 		"mkdirp": "^0.5.1",
 		"modernizr": "^3.6.0",
-		"ncp": "^2.0.0"
+		"ncp": "^2.0.0",
+		"skrollr": "^0.6.26"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.2.2",
