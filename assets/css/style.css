@@ -14,7 +14,7 @@
      letter-spacing: 0.02em 
 }
  a{
-     color: #28a1da;
+     color: black;
 }
  a:hover{
      color: #575757;
@@ -8547,6 +8547,10 @@ body {
     line-height: 22px;
     font-size: 16px;
     font-weight: 700;
+}
+
+.usermanual-img {
+    margin: 20px 0px;
 }
 
 
