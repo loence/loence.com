@@ -14,7 +14,7 @@
      letter-spacing: 0.02em 
 }
  a{
-     color: #000;
+     color: #28a1da;
 }
  a:hover{
      color: #575757;
@@ -270,7 +270,7 @@
 }
  .text-extra-large {
      letter-spacing: 0.02em;
-     font-size: 16px !important;
+     font-size: 15px !important;
      line-height: 31px !important;
 }
  .text-extra-large strong {
@@ -7960,7 +7960,7 @@
      margin-right: 10px;
 }
  .our-process .icon .title {
-    line-height: 23px !important;
+    line-height: 30px !important;
 }
  .our-process .underline-bg {
     background-color: #ef824c;
@@ -8433,7 +8433,7 @@ body {
 }
 
 .features-section p {
-    font-size: 16px;
+    font-size: 15px;
     line-height: 31px;
 }
 
@@ -8535,6 +8535,18 @@ body {
 .newmargin10-5 {
     margin-top: 10% !important;
     margin-bottom: 5% !important;
+}
+
+.custom-p {
+    font-size: 14px;
+    line-height: 31px;
+    font-weight: 600;
+}
+
+.custom-h3 {
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 
