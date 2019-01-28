@@ -5,8 +5,8 @@
 	"scripts": {
 		"build-ejs": "node bin/build-ejs.js",
 		"copy-assets": "node bin/copy-assets.js",
-		"build": "webpack --watch && npm run copy-assets",
-		"start": "webpack-dev-server --open"
+		"build": "npm run copy-assets && webpack --watch",
+		"start": "npm run copy-assets && webpack-dev-server --open"
 	},
 	"repository": {
 		"type": "git",
@@ -26,6 +26,7 @@
 		"bootstrap": "^4.2.1",
 		"bootstrap-hover-dropdown": "^2.2.1",
 		"ejs": "^2.6.1",
+		"fs": "0.0.1-security",
 		"fs-extra": "^7.0.1",
 		"jquery": "^3.3.1",
 		"jquery.easing": "^1.4.1",

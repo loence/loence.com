@@ -3,7 +3,7 @@ import '../scripts/page-preloading';
 import 'jquery.min';
 import 'modernizr';
 import 'bootstrap';
-import 'bootstrap-hover-dropdown';
+import '../scripts/bootstrap-hover-dropdown';
 import '../scripts/jquery.easing.1.3';
 import 'skrollr.min';
 import '../scripts/smooth-scroll';
@@ -23,7 +23,6 @@ import '../scripts/jquery.countTo';
 import '../scripts/jquery.fitvids';
 import '../scripts/imagesloaded.pkgd.min';
 import '../scripts/classie';
-import '../scripts/hamburger-menu';
 import '../scripts/main';
 
 
@@ -42,5 +41,6 @@ import '../assets/css/text-effect.css';
 import '../assets/css/menu-hamburger.css';
 import '../assets/css/style.css';
 import '../assets/css/responsive.css';
+
 
 
