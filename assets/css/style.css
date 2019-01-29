@@ -2905,7 +2905,7 @@
     padding:5px
 }
  .project-header-text {
-     margin-top: 20%;
+     margin-top: 15%;
      position: relative;
      text-align: center;
      width: 100%;
@@ -8396,7 +8396,7 @@ body {
 
     @media (max-width: 767px) {
         .project-header-text {
-            margin-top: 45% !important;
+            margin-top: 0% !important;
         }
         .image15 {
             display: none !important;
@@ -8415,6 +8415,11 @@ body {
     }
 }
 
+@media (max-width: 480px) {
+    .half-project-img {
+        padding-top: 15%;
+    }
+}
 
 .panelsubmodule {
     font-size: 14px;
@@ -8560,4 +8565,15 @@ body {
     margin-top: 30px !important;
 }
 
+.module-half-project-img {
+    height: 350px !important;
+}
 
+.module-content-top-margin {
+    margin-top: 40px;
+}
+
+.modulecard-sub-header-2 {
+    font-weight: 600 !important;
+    font-size: 17px;
+}

@@ -18,60 +18,11 @@
 </div>
 <!-- .page-preloader -->
 <!-- navigation panel -->
-<%- include ../../navigation.partial.ejs %>
+<%- include ../user-manual-navigation.partial.ejs %>
 
 <!-- row -->
 <div class="row usermanual-body">
-	<!-- col -->
-	<div class="col-md-3 col-sm-4 mobile-displaynone">
-		<!-- toggle -->
-		<div class="panel-group toggles-style2 usermanual-panel-fixed">
-			<div class="panel panel-default">
-				<div  id="type2-headingOne" class="panel-heading usermanual-panel">
-					<h4 class="panel-title panel-title-boder-bottom panel-head">Modules</h4>
-				</div>
-			</div>
-			<!-- toggle item -->
-			<div class="panel panel-default active" id="collapse-two">
-				<div role="tablist" id="type2-headingOne" class="panel-heading usermanual-panel">
-					<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link1"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom">Human Resource Management<span class="pull-right"><i class="fa fa-angle-down"></i></span></h4></a>
-				</div>
-				<div id="collapse-two-link1" class="panel-collapse collapse in">
-					<div class="panel-body usermanual-panelbody">
-						<a class="usermanual-hover" href=""><h5 class="sub-manu-2nd">Payroll</h5></a>
-						<a class="usermanual-hover" href=""><h5 class="sub-manu-2nd">abc</h5></a>
-					</div>
-				</div>
-			</div>
-			<!-- end toggle item -->
-			<!-- toggle item -->
-			<div class="panel panel-default">
-				<div role="tablist" id="type2-headingTwo" class="panel-heading usermanual-panel">
-					<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link2"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom panel-title-boder-top">Collapse Item #2<span class="pull-right"><i class="fa fa-angle-down"></i></span></h4></a>
-				</div>
-				<div id="collapse-two-link2" class="panel-collapse collapse">
-					<div class="panel-body usermanual-panelbody">
-						ry. Lorem Ipsum
-					</div>
-				</div>
-			</div>
-			<!-- end toggle item -->
-			<!-- toggle item -->
-			<div class="panel panel-default">
-				<div role="tablist" id="type2-headingThree" class="panel-heading usermanual-panel">
-					<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link3"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom panel-title-boder-top">Collapse Item #3<span class="pull-right"><i class="fa fa-angle-down"></i></span></h4></a>
-				</div>
-				<div id="collapse-two-link3" class="panel-collapse collapse">
-					<div class="panel-body usermanual-panelbody">
-
-					</div>
-				</div>
-			</div>
-			<!-- end toggle item -->
-		</div>
-		<!-- end toggle -->
-	</div>
-	<!-- end col -->
+	<%- include ../human-resource-management/user-manual-hrm-leftbar.partial.ejs %>
 	<!-- col -->
 	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
 		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
@@ -91,14 +42,14 @@
 		</aside>
 	</div>
 
-	<div class="col-md-7 col-sm-7">
+	<div class="col-md-7 col-sm-7 mob-padding">
 		<h2 class="usermanual-sub-header">Human Resource Management</h2>
 		<h2 class="usermanual-sub-header-2">Employee Management</h2>
 		<p class="usermanual-p font-weight-600 margin-top-30" id="viewemployee">To view employee information</p>
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 		<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -110,11 +61,11 @@
 			<li class="usermanual-li">Click on different tabs to view more related information.</li>
 		<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/4.png" alt=""/>
 
-			<li class="usermanual-li">To view more employees, change Items per page or go to the next page by clicking on the Next page icon.</li>
+			<li class="usermanual-li">To view more employees, change <b>Items per page</b> or go to the next page by clicking on the <b>Next page</b> icon.</li>
 		<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
 			<li class="usermanual-li">Search employees using name, employee code or email id.</li>
-			<li class="usermanual-li">Use Employee Filter to view particular branch or unit employees.</li>
+			<li class="usermanual-li">Use <b>Employee Filter</b> to view particular branch or unit employees.</li>
 		<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/5.png" alt=""/>
 
 			<li class="usermanual-li">Sort employees by name or email alphabetically and by employee code or mobile number numerically by clicking on the particular table head.</li>
@@ -124,26 +75,28 @@
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
-			<li class="usermanual-li">Click on Create button.</li>
-			<li class="usermanual-li">In Basic Info page, fill in necessary information (* marked fields are required. But it is highly recommended to provide all information.). The email id that is provided here is required to log in to the software. Then click Next button.</li>
+			<li class="usermanual-li">Click on <b>Create</b> button.</li>
+			<li class="usermanual-li">In Basic Info page, fill in necessary information (* marked fields are required. But it is highly
+				recommended to provide all information.). The email id that is provided here is required to log in to the software.
+				Then click <b>Next</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/6.png" alt=""/>
 
-			<li class="usermanual-li">In Company Info page, employee code will be automatically assigned depending on the number of employees previously created. Provide salary and remuneration information. Entry and exit hour time is counted as 24-hour clock. Select type of employee i.e. permanent, residential etc. by checking their corresponding box. Click on Next button.</li>
+			<li class="usermanual-li">In Company Info page, employee code will be automatically assigned depending on the number of employees previously created. Provide salary and remuneration information. Entry and exit hour time is counted as 24-hour clock. Select type of employee i.e. permanent, residential etc. by checking their corresponding box. Click on <b>Next</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/7.png" alt=""/>
 
-			<li class="usermanual-li">In Personal Info page, provide personal information. You can skip filling in these information but it is highly recommended to provide all information. Click on Next button.</li>
+			<li class="usermanual-li">In Personal Info page, provide personal information. You can skip filling in these information but it is highly recommended to provide all information. Click on <b>Next</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/8.png" alt=""/>
 
-			<li class="usermanual-li">In Upload Document page, upload profile picture or identity card (National ID card) either by clicking on SELECT IMAGE and directing to desired image or selecting an image, drag it to Drop your image here area. If you don’t have any picture to upload, click Skip otherwise Click on Next button.</li>
+			<li class="usermanual-li">In Upload Document page, upload profile picture or identity card (National ID card) either by clicking on <b>SELECT IMAGE</b> and directing to desired image or selecting an image, drag it to <b>Drop your image here</b> area. If you don’t have any picture to upload, click <b>Skip</b> otherwise Click on <b>Next</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/9.png" alt=""/>
 
-			<li class="usermanual-li">In Assign page, assign employee to particular branch, unit and position. Email is the email which is provided in Basic Info window. Choose password for ERP software. If you don’t fill the password field, the password for the email will be 12345 by default. Click on Next button.</li>
+			<li class="usermanual-li">In Assign page, assign employee to particular branch, unit and position. Email is the email which is provided in Basic Info window. Choose password for ERP software. If you don’t fill the password field, the password for the email will be 12345 by default. Click on <b>Next</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/10.png" alt=""/>
 
-			<li class="usermanual-li">In Review page, information that was provided earlier is to review to make sure those information are correct. Finally, Click on Finish button.</li>
+			<li class="usermanual-li">In Review page, information that was provided earlier is to review to make sure those information are correct. Finally, Click on <b>Finish</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/11.png" alt=""/>
 
 		</ol>
@@ -152,7 +105,7 @@
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -161,19 +114,19 @@
 			<li class="usermanual-li">From the list, click on the particular employee to view more information. Click on different tabs to view more related information.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/3.png" alt=""/>
 
-			<li class="usermanual-li">Click on Edit Information button.</li>
+			<li class="usermanual-li">Click on <b>Edit Information</b> button.</li>
 			<li class="usermanual-li">Click on different tabs to view more related information.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/12.png" alt=""/>
 
 			<li class="usermanual-li">Edit necessary information.</li>
-			<li class="usermanual-li">Click on Next button and finally Update button to complete the process.</li>
+			<li class="usermanual-li">Click on <b>Next</b> button and finally <b>Update</b> button to complete the process.</li>
 		</ol>
 
 		<p class="usermanual-p font-weight-600 margin-top-30" id="upadtemealemployee">To update meal information of employee</p>
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -182,20 +135,20 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select Update Meal option.</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>Update Meal</b> option.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
 			<li class="usermanual-li">In Update Meal window, select or deselect corresponding boxes.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/14.png" alt=""/>
 
-			<li class="usermanual-li">Click on Confirm button.</li>
+			<li class="usermanual-li">Click on <b>Confirm</b> button.</li>
 		</ol>
 
 		<p class="usermanual-p font-weight-600 margin-top-30" id="transferemployee">To transfer employee</p>
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -204,20 +157,20 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select Transfer option.</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>Transfer</b> option.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
 			<li class="usermanual-li">In Transfer Employee window, select desired branch, unit and position.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/15.png" alt=""/>
 
-			<li class="usermanual-li">Click on Confirm button.</li>
+			<li class="usermanual-li">Click on <b>Confirm</b> button.</li>
 		</ol>
 
 		<p class="usermanual-p font-weight-600 margin-top-30" id="promoteemployee">To promote employee</p>
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -226,20 +179,20 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select Promote option.</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>Promote</b> option.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
 			<li class="usermanual-li">Change salary information and other allowances in new window.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/16.png" alt=""/>
 
-			<li class="usermanual-li">Click on Promote button.</li>
+			<li class="usermanual-li">Click on <b>Promote</b> button.</li>
 		</ol>
 
 		<p class="usermanual-p font-weight-600 margin-top-30" id="terminateemployee">To terminate employee</p>
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -248,10 +201,10 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select Terminate option.</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>Terminate</b> option.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
-			<li class="usermanual-li">In Terminate Employee window, click on Confirm button.</li>
+			<li class="usermanual-li">In Terminate Employee window, click on <b>Confirm</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/17.png" alt=""/>
 
 		</ol>
@@ -260,7 +213,7 @@
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -269,10 +222,10 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select Revoke Assignment option.</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>Revoke Assignment</b> option.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
-			<li class="usermanual-li">In Revoke Assignment window, click on Confirm button.</li>
+			<li class="usermanual-li">In Revoke Assignment window, click on <b>Confirm</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/18.png" alt=""/>
 
 		</ol>
@@ -281,7 +234,7 @@
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -290,10 +243,10 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select Reset Password option</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>Reset Password</b> option</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
-			<li class="usermanual-li">In Reset Password window, click on Confirm button. (New password will be 12345)</li>
+			<li class="usermanual-li">In Reset Password window, click on <b>Confirm</b> button. (New password will be 12345)</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/19.png" alt=""/>
 
 		</ol>
@@ -302,7 +255,7 @@
 
 		<ol class="usermanual-ol">
 			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
-			<li class="usermanual-li">Click on HRM section and then Employees page.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Employees</b> page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/1.png" alt=""/>
 
 			<li class="usermanual-li">Get a list of employees.</li>
@@ -311,14 +264,14 @@
 			<li class="usermanual-li">Find desired employee by searching, sorting, filtering or changing items per page.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
 
-			<li class="usermanual-li">Click on More Options button on the same line and select ID Card option.</li>
+			<li class="usermanual-li">Click on <b>More Options</b> button on the same line and select <b>ID Card</b> option.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/13.png" alt=""/>
 
-			<li class="usermanual-li">In new window, click on Download button.</li>
+			<li class="usermanual-li">In new window, click on <b>Download</b> button.</li>
 			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/employee-management/19.png" alt=""/>
 
 			<li class="usermanual-li">Open downloaded file.</li>
-			<li class="usermanual-li">Select Print option and choose various settings for printer options.</li>
+			<li class="usermanual-li">Select <b>Print</b> option and choose various settings for printer options.</li>
 		</ol>
 	</div>
 	<!-- end col -->
