@@ -22,6 +22,14 @@
     -webkit-flex-wrap: wrap;
 }
 
+.col-container-module {
+    width: 90%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+}
+
 .tour-cate-box {
     background-color: #fff;
     text-align: center;
@@ -44,4 +52,18 @@
 
 .fl-left {
     float: left;
+}
+
+.tour-cate-box-module {
+    background-color: #fff;
+    text-align: center;
+    padding: 1em;
+    border-color: #e3ebfc;
+    box-shadow: 0 0.75rem 1.625rem 0 rgba(54,141,255,.1);
+    border-width: .0625rem;
+    border-style: solid;
+    border-radius: .5rem;
+    align-items: center;
+    display: flex;
+    /* min-height: 220px; */
 }
