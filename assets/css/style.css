@@ -8407,6 +8407,11 @@ body {
         .mob-padding {
             padding-left: 30px;
         }
+
+        .mobile-no-padding {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
     }
 
 @media (min-width: 767px) {
@@ -8507,8 +8512,9 @@ body {
 
 .usermanual-sub-header-2 {
     margin-top: 40px;
-    font-weight: 600 !important;
+    font-weight: bold !important;
     font-size: 18px;
+    color: black;
 }
 
 .usermanual-li {
@@ -8577,3 +8583,30 @@ body {
     font-weight: 600 !important;
     font-size: 17px;
 }
+
+.box-min-height-365 {
+    min-height: 365px;
+}
+
+.box-min-height-340 {
+    min-height: 340px;
+}
+
+.box-min-height-300 {
+    min-height: 300px;
+}
+
+.box-min-height-270 {
+    min-height: 270px;
+}
+
+.box-min-height-200 {
+    min-height: 200px;
+}
+
+.box-min-height-235 {
+    min-height: 235px;
+}
+
+
+
