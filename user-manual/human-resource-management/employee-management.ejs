@@ -22,7 +22,7 @@
 
 <!-- row -->
 <div class="row usermanual-body">
-	<%- include ../user-manual-hrm-leftbar.partial.ejs %>
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'HRM'}) %>
 	<!-- col -->
 	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
 		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
@@ -279,5 +279,24 @@
 
 <%- include ../../footer.partial.ejs %>
 </body>
+
+<style>
+	#viewemployee:before,
+	#createemployee:before,
+	#editemployee:before,
+	#upadtemealemployee:before,
+	#transferemployee:before,
+	#promoteemployee:before,
+	#terminateemployee:before,
+	#revokeemployee:before,
+	#resetpasswordemployee:before,
+	#printidemployee:before {
+		display: block;
+		content: " ";
+		margin-top: -81px;
+		height: 81px;
+		visibility: hidden;
+	}
+</style>
 
 </html>
