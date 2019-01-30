@@ -8608,5 +8608,10 @@ body {
     min-height: 235px;
 }
 
-
-
+.same-page-link-top-offset:before {
+    display: block;
+    content: " ";
+    margin-top: -61px;
+    height: 61px;
+    visibility: hidden;
+}
