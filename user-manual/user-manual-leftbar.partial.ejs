@@ -8,11 +8,11 @@
 			</div>
 		</div>
 		<!-- toggle item -->
-		<div class="panel panel-default active" id="collapse-two">
+		<div class="panel panel-default" id="collapse-two">
 			<div role="tablist" id="type2-headingOne" class="panel-heading usermanual-panel">
-				<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link1"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom">Human Resource Management<span class="pull-right"><i class="fa fa-angle-down"></i></span></h4></a>
+				<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link1"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom">Human Resource Management<span class="pull-right"><i class="fa <%= ((activeSection == 'HRM') ? 'fa-angle-up': 'fa-angle-down') %>"></i></span></h4></a>
 			</div>
-			<div id="collapse-two-link1" class="panel-collapse collapse in">
+			<div id="collapse-two-link1" class="panel-collapse collapse <%= ((activeSection == 'HRM') ? 'in': '') %>">
 				<div class="panel-body usermanual-panelbody">
 					<a class="usermanual-hover" href="/user-manual/human-resource-management/employee-management"><h5 class="sub-manu-2nd">Employee Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/human-resource-management/attendance-management"><h5 class="sub-manu-2nd">Attendance Management</h5></a>
@@ -27,9 +27,9 @@
 		<!-- toggle item -->
 		<div class="panel panel-default">
 			<div role="tablist" id="type2-headingTwo" class="panel-heading usermanual-panel">
-				<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link2"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom panel-title-boder-top">Supply Chain Management<span class="pull-right"><i class="fa fa-angle-down"></i></span></h4></a>
+				<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link2"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom panel-title-boder-top">Supply Chain Management<span class="pull-right"><i class="fa <%= ((activeSection == 'SCM') ? 'fa-angle-up': 'fa-angle-down') %>"></i></span></h4></a>
 			</div>
-			<div id="collapse-two-link2" class="panel-collapse collapse">
+			<div id="collapse-two-link2" class="panel-collapse collapse <%= ((activeSection == 'SCM') ? 'in': '') %>">
 				<div class="panel-body usermanual-panelbody">
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/customer-management"><h5 class="sub-manu-2nd">Customer Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/delivery-management"><h5 class="sub-manu-2nd">Delivery Management</h5></a>
