@@ -8615,3 +8615,9 @@ body {
     height: 61px;
     visibility: hidden;
 }
+
+.umindex-a {
+    color: #28a1da;
+    font-size: 16px;
+    font-weight: 600;
+}
