@@ -36,7 +36,7 @@
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/orders-management"><h5 class="sub-manu-2nd">Orders Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/purchase-management"><h5 class="sub-manu-2nd">Purchase Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/reception-management"><h5 class="sub-manu-2nd">Reception Management</h5></a>
-					<a class="usermanual-hover" href="/user-manual/supply-chain-management/salse-management"><h5 class="sub-manu-2nd">Sales Management</h5></a>
+					<a class="usermanual-hover" href="/user-manual/supply-chain-management/sales-management"><h5 class="sub-manu-2nd">Sales Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/supplier-management"><h5 class="sub-manu-2nd">Supplier Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/supply-chain-management/warehouse-management"><h5 class="sub-manu-2nd">Warehouse Management</h5></a>
 				</div>
@@ -46,9 +46,9 @@
 		<!-- toggle item -->
 		<div class="panel panel-default">
 			<div role="tablist" id="type2-headingThree" class="panel-heading usermanual-panel">
-				<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link3"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom panel-title-boder-top">Financial Accounting<span class="pull-right"><i class="fa fa-angle-down"></i></span></h4></a>
+				<a data-toggle="collapse" data-parent="#collapse-two" href="#collapse-two-link3"><h4 class="font-weight-600 usermanual-hover panel-title panel-title-boder-bottom panel-title-boder-top">Financial Accounting<span class="pull-right"><i class="fa <%= ((activeSection == 'FA') ? 'fa-angle-up': 'fa-angle-down') %>"></i></span></h4></a>
 			</div>
-			<div id="collapse-two-link3" class="panel-collapse collapse">
+			<div id="collapse-two-link3" class="panel-collapse collapse <%= ((activeSection == 'FA') ? 'in': '') %>">
 				<div class="panel-body usermanual-panelbody">
 					<a class="usermanual-hover" href="/user-manual/financial-accounting/asset-management"><h5 class="sub-manu-2nd">Asset Management</h5></a>
 					<a class="usermanual-hover" href="/user-manual/financial-accounting/expense-management"><h5 class="sub-manu-2nd">Expense Management</h5></a>
