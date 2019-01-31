@@ -8530,7 +8530,7 @@ body {
     margin-bottom: 0px;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
+.nav > li > a:hover, .nav > li > a.active {
     text-decoration: none;
     color: #28a1da !important;
 }
