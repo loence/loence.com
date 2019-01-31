@@ -8622,9 +8622,23 @@ body {
     font-weight: 600;
 }
 
-.umindex-li {
-    text-align: center;
+.umindex-li-left {
+    text-align: right;
     margin: 10px 0px;
+}
+
+.umindex-li-right {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .umindex-li-left {
+        text-align: center;
+    }
+    .umindex-li-right {
+        text-align: center;
+    }
 }
 
 .pt30 {
