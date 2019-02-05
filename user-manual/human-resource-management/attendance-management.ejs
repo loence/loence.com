@@ -1,0 +1,288 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'HRM', activeModule: 'attendance-management'}) %>
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#viewattendance">To view attendance sheet and attendance calendar</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#addovertime">To add overtime</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#grantleave">To grant leave</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#cancelleave">To cancel leave</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#shiftattendance">To shift attendance</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#attendancemanually">To enter attendance manually</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#addtoil">To add toil</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#attendancepenalty">To add attendance penalty</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#mealnumber">To update meal number of any employee</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#exportattendance">To export attendance of any employee</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Human Resource Management</h2>
+		<h2 class="usermanual-sub-header-2">Attendance Management</h2>
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="viewattendance">To view attendance sheet and attendance calendar</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">To view instant attendance, from More Options, select Start Pulling. A success message will be shown after this successful process. It may take a few moments.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">To view more employees, change Items per page or go to the next page by clicking on the Next page icon. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item%20per%20page.png" alt=""/>
+
+			<li class="usermanual-li">Search employees using name or employee code.</li>
+			<li class="usermanual-li">From the list, click on the particular employee to view more information.</li>
+			<li class="usermanual-li">After clicking, details of how many days the employee was present, absent, took leave, did overtime and toil and had attendance penalty in the current month can be found.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/4.png" alt=""/>
+
+			<li class="usermanual-li">Scroll down to see attendance calendar of the employee. Holiday, leave, penalty will be automatically marked in the calendar.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/5.png" alt=""/>
+
+			<li class="usermanual-li">To view attendance calendar of other months, Click on current month on the right of the employee name and code and select your expected year and month. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/6.png" alt=""/>
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="addovertime">To add overtime</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Add Overtime.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Add Overtime window, click on the Calendar button on the right of Enter Overtime Date and choose the particular date. By default, the date shown will be current date. On the Enter Overtime Hours field, type the hours of overtime.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/8.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="grantleave">To grant leave</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Grant Leave option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Grant Leave window, click on the Calendar button on the right of Select Dates and choose the particular date. You can choose multiple dates for this operation. Type down the purpose of leave in Add Reason field.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/9.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="cancelleave">To cancel leave</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Cancel Leave option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Cancel Leave window, click on the Calendar button on the right of Select Dates and choose the particular date. You can choose multiple dates for this operation. Type down the purpose of leave in Add Reason field.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/10.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="shiftattendance">To shift attendance</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Shift Attendance option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Shift Attendance window, select Original Date and Target Date using the calendar on the right of respective field.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/11.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="attendancemanually">To enter attendance manually</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Entry Attendance option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Entry Attendance window, click on the Calendar button on the right of Select Dates and choose the particular date. You can choose multiple dates for this operation.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/12.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="addtoil">To add toil</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Add Toil option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Add Toil window, click on the Calendar button on the right of Select Dates and choose the particular date. You can choose multiple dates for this operation.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/13.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="attendancepenalty">To add attendance penalty</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Penalty option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Add Penalty window, click on the Calendar button on the right of Select Dates and choose the particular date. You can choose multiple dates for this operation. Type down the purpose of leave in Add Reason field.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/14.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="mealnumber">To update meal number of any employee</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Update Meal option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Update Meal window, choose month using Calendar button. Type down the number of meals you wish to add or deduct from its original value. Use negative value for deduction.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/15.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="exportattendance">To export attendance of any employee</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on HRM section and then Attendance page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of employee attendance details.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired employee with search option, filter, sort or changing items per page and click on the checkbox at the left of particular employee. You can select multiple employees for this operation. To select all the employees in the list, click on the checkbox at the left of Name table head. To deselect any employee, click on the checkbox at the left of particular employee. You can search for employees manually in the search box using name or employee code.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on More Options button and select Export Attendance option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/3.png" alt=""/>
+
+			<li class="usermanual-li">In Export Employee Data window, Choose From Date and To Date using Calendar button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-management/14.png" alt=""/>
+
+			<li class="usermanual-li">Click on Confirm button. A success message will be shown after completing process and an excel file will be downloaded automatically.</li>
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

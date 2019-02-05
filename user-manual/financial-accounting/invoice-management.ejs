@@ -1,0 +1,134 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'FA', activeModule: 'invoice-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#createinvoice">To create invoice</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#vieweinvoice">To view invoices</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#receivepaymentsinvoice">To receive invoice payments</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#printinvoice">To print invoices</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Financial Accounting</h2>
+		<h2 class="usermanual-sub-header-2">Invoice Management</h2>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="createinvoice">To create invoice</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Accounting</b> section and then <b>Invoices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/5.png" alt=""/>
+
+			<li class="usermanual-li"><b>Select Customer</b> from its dropdown button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Enter description and amount of the invoice.</li>
+			<li class="usermanual-li">Click on <b>Submit</b> button.</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="vieweinvoice">To view invoices</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Accounting</b> section and then <b>Invoices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of invoices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Search invoices using serial number.</li>
+			<li class="usermanual-li">Sort invoices by total and due date by clicking on respective table head.</li>
+			<li class="usermanual-li">Use <b>Invoice Filter</b> option to filter invoices by its branch and customer.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/3.png" alt=""/>
+
+			<li class="usermanual-li">To filter invoices by maturity, click on dropdown button at the right of maturity and select desired option. Click on <b>Apply</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/4.png" alt=""/>
+
+			<li class="usermanual-li">Change <b>Items Per Page</b> to view more invoices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="receivepaymentsinvoice">To receive invoice payments</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Accounting</b> section and then <b>Invoices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of invoices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired invoice with filter, sort, search or changing items per page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>More Options</b> button on the right of the particular invoice and select <b>Receive</b> option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Select the medium of payment, enter amount of money and deducted money and provide necessary information.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/8.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Confirm</b> button.</li>
+			
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="printinvoice">To print invoices</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Accounting</b> section and then <b>Invoices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of invoices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/2.png" alt=""/>
+
+			<li class="usermanual-li">From the list, find desired invoice with filter, sort, search or changing items per page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>More Options</b> button on the right of the particular invoice and select <b>Print</b> option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/invoice-management/7.png" alt=""/>
+
+			<li class="usermanual-li">A PDF file is to be downloaded. Open the file. Choose necessary options and print.</li>
+			
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

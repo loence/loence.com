@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'SCM', activeModule: 'orders-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#createorder">To create an order</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#vieworder">To view order list</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#dismissorder">To dismiss an order</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#salefromorder">To create sale from order list</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Supply Chain Management</h2>
+		<h2 class="usermanual-sub-header-2">Orders Management</h2>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="createorder">To create an order</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Sales</b> section and then <b>Orders</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/3.png" alt=""/>
+
+			<li class="usermanual-li">Select customer from its dropdown button or search for particular customer.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/3.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button on the right side and select <b>Item Type</b>, <b>Entity</b> and its <b>Quantity</b>. Click on <b>Confirm</b> button. You can order more than one item at a time.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/4.png" alt=""/>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/5.png" alt=""/>
+
+			<li class="usermanual-li">To edit or remove items, click on <b>Edit</b> or <b>Remove</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Set an <b>Approximate Supply Date</b> using calendar button.</li>
+			<li class="usermanual-li">Click on <b>Submit</b> button.</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="vieworder">To view order list</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Sales</b> section and then <b>Orders</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of orders.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/2.png" alt=""/>
+
+			<li class="usermanual-li">To view more orders, change <b>Items per Page</b> or go to the next page by clicking on the <b>Next page</b> icon. You can also search using order number and customer name.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Sort orders by order number and total price by clicking on the particular table head.</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="dismissorder">To dismiss an order</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Sales</b> section and then <b>Orders</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of orders.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Find the desired order that you want to dismiss from the list. To view more orders, change <b>Items per Page</b> or go to the next page by clicking on the <b>Next Page</b> icon. Sort the list by order number and total price by clicking on respective table head. You can search for specific order using the search box.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on the <b>More Options</b> button on the right side of that particular order and select <b>Dismiss Order</b>.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/7.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="salefromorder">To create sale from order list</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Sales</b> section and then <b>Orders</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of orders.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Find the desired order. To view more orders, change <b>Items per Page</b> or go to the next page by clicking on the <b>Next Page</b> icon. Sort the list by order number and total price by clicking on respective table head. You can search for specific order using the search box.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on the <b>More Options</b> button on the right side of that particular order and select <b>Create Sale</b> option.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/orders-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Select customer from its dropdown button or search for particular customer.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/3.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button on the right side and select Item <b>Type</b>, <b>Entity</b> and its <b>Quantity</b>. Click on <b>Confirm</b> button. You can sell more than one item at a time.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/4.png" alt=""/>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/5.png" alt=""/>
+
+			<li class="usermanual-li">To edit or remove items, click on <b>Edit</b> or <b>Remove</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/sales-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Enter discount and vat percentage.</li>
+			<li class="usermanual-li">Select the medium of payment and enter amount of money you are receiving and enter deduction amount.</li>
+			<li class="usermanual-li">Click on the <b>Submit</b> button.</li>
+
+		</ol>
+
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>
