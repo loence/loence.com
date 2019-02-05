@@ -1,0 +1,662 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Loence Accounting- The best accounting software in Bangladesh</title>
+    <meta name="description" content="Loence Financial Accounting is a proficient and modern accounting system which allows a business to keep track of all types of financial
+            transactions, including purchases (expenses), sales (invoices and income),
+            liabilities (funding, accounts payable), etc. We offer customization, scalability,
+          ease of use with moderate pricing and reliable support
+    ">
+    <link rel="stylesheet" href="/assets/css/custom-classes.css">
+    <%- include ../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+    <div class="preloader">
+        <img src="/assets/images/preloader.gif" alt="Preloader">
+    </div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+    <%- include('../modules-leftbar.partial.ejs', {activeModule: 'FA'}) %>
+
+    <div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+        <aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky
+               data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+            <h4 class="toc-submenu">Financial Accounting Features</h4>
+            <ul class="nav nav-list flex-column mb-4 show-bg-active" id="right-menu">
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#journal">Journal</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#ledger">Ledger</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#chart-of-accounts">Chart of Accounts</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#accounts-payable">Accounts Payable</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#accounts-receivable">Accounts Receivable</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#asset-management">Asset Management</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#financial-statements">Financial Statements</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#point-of-sale">Point of Sale</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#bank-reconciliation">Bank Reconciliation</a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+    <div class="col-md-7 col-sm-7 col-xs-12 mob-padding">
+        <section id="project-img" class="no-padding module-content-top-margin">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center half-project-img wow fadeInDown module-half-project-img"
+                         style="background-image:url('/assets/images/accounting.jpg');">
+                        <div class="opacity-medium bg-dark-gray"></div>
+                        <div class="project-header-text">
+                            <h1 class="project-title white-text">Loence Financial Accounting</h1>
+                            <b class="white-text">The best accounting software in Bangladesh</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="usermanual-sub-header">What is Accounting?</h2>
+        <p class="usermanual-p">
+            An accounting system allows a business to keep track of all types of financial
+            transactions, including purchases (expenses), sales (invoices and income),
+            liabilities (funding, accounts payable), etc. and is capable of generating
+            comprehensive statistical reports that provide management or interested parties
+            with a clear set of data to aid in the decision-making process.
+        </p>
+
+        <h2 class="usermanual-sub-header">Features of Loence Financial Accounting</h2>
+        <p class="usermanual-p">
+            We offer a customizable, scalable and easy to use proficient financial accounting solution with
+            reliable support in Bangladesh. Following is a list of features-
+        </p>
+
+        <div class="same-page-link-top-offset" id="journal">
+            <h2 class="usermanual-sub-header-2">Journal</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-355">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">General Journal</h2>
+                                            <p class="custom-p">When a financial event occurs it's automatically recorded in
+                                                the general journal. You can see a details log of events from here.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-355">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Transaction Approval</h2>
+                                            <p class="custom-p">Events affecting certain accounting can be subjected to
+                                                approval before processing. And its configurable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-300">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Adjusting Entries</h2>
+                                            <p class="custom-p">
+                                                We offer a intelligent adjusting entry interface where you don't need to be
+                                                an accounting expert to journalize an entry.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-300">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Automatic Journalization</h2>
+                                            <p class="custom-p">
+                                                Most of the economic events if not all are journalized automatically.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="ledger">
+            <h2 class="usermanual-sub-header-2">Ledger</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">General Ledger</h2>
+                                            <p class="custom-p modulecard-p">A general ledger contains all the accounts for
+                                                recording transactions relating to a company's assets, liabilities, owners'
+                                                equity, revenue, and expenses.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Custom Ledger</h2>
+                                            <p class="custom-p modulecard-p">You can maintain custom ledger for supplier,
+                                                customer, employee or any economic entity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="chart-of-accounts">
+            <h2 class="usermanual-sub-header-2">Chart Of Accounts</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Account Charts</h2>
+                                            <p class="custom-p modulecard-p">The chart of accounts is a listing of all
+                                                accounts used in the general ledger of an organization. You can add new
+                                                accounts easily.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Trial Balance</h2>
+                                            <p class="custom-p modulecard-p">You can see a point in time trial balance from
+                                                account list.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="accounts-payable">
+            <h2 class="usermanual-sub-header-2">Accounts Payable</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Vouchers</h2>
+                                            <p class="custom-p modulecard-p">Manage all your vouchers from a single list. Print vouchers as necessary.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Payment</h2>
+                                            <p class="custom-p modulecard-p">Make payment on your vouchers use one of the payment methods (cash, cheque, bank, lc) and print receipt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Credit Limit Notification</h2>
+                                            <p class="custom-p modulecard-p">Get notified if a voucher payment has met the credit limit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="accounts-receivable">
+            <h2 class="usermanual-sub-header-2">Accounts Receivable</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Automatic Invoice Generation</h2>
+                                            <p class="custom-p modulecard-p">Invoices are generated automatically in case of any relevant transaction.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Invoice List</h2>
+                                            <p class="custom-p modulecard-p">Manage all your invoices from a single list. Print invoice as necessary.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Maturity Notification</h2>
+                                            <p class="custom-p modulecard-p">Get notified when a invoice expires the credit limit and gains maturity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Payment Receiption</h2>
+                                            <p class="custom-p modulecard-p">Receive payment on your invoice using one of the payment methods (cash, cheque, bank, lc) and print receipt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="asset-management">
+            <h2 class="usermanual-sub-header-2">Asset Management</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Asset Purchase</h2>
+                                            <p class="custom-p modulecard-p">Purchase asset using appropriate payment method and add revaluation information.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Asset List</h2>
+                                            <p class="custom-p modulecard-p">List of all asset. This list is searchable, sortable and filterable by appropriate properties.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Appreciation and Depreciation</h2>
+                                            <p class="custom-p modulecard-p">Asset appreciation and depreciation are calculated automatically in every accounting period. You can define the revaluation methods for all asset.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Asset Disposal</h2>
+                                            <p class="custom-p modulecard-p">You can sale an asset before or after the useful life ends. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="financial-statements">
+            <h2 class="usermanual-sub-header-2">Financial Statements</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Balance Sheet</h2>
+                                            <p class="custom-p modulecard-p">Balance sheet is a point in time snapshot of the company’s financial position
+                                                depicting their assets, liabilities and owner’s equity account balance.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Income Statement</h2>
+                                            <p class="custom-p modulecard-p">Income statement reflects profit and loss of the company in a specific period of
+                                                time depicting expenses and revenues.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Owner’s equity statement</h2>
+                                            <p class="custom-p modulecard-p">Owner’s equity statement shows changes in capital due to investment,
+                                                withdrawal or profit/loss during the reporting period. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Statement of cash flow</h2>
+                                            <p class="custom-p modulecard-p">Statement of cash flow summarizes the amount of cash entering and leaving the
+                                                company.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="point-of-sale">
+            <h2 class="usermanual-sub-header-2">Point of Sale</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Quick keys and product lookup</h2>
+                                            <p class="custom-p modulecard-p">Find your products with no delay with our quick keys and product lookup features.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Multiple Payment Methods</h2>
+                                            <p class="custom-p modulecard-p">Choose you payment method of choice from a pool of payment methods.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Barcoding</h2>
+                                            <p class="custom-p modulecard-p">Use barcodes, RFIDs or QR codes to track your product accurately and faster.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Inventory Counts and Auto-fill</h2>
+                                            <p class="custom-p modulecard-p">View realtime inventory counts easily and use the benifit of auto-fill orders.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="bank-reconciliation">
+            <h2 class="usermanual-sub-header-2">Bank Reconciliation</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Bank Accounting</h2>
+                                            <p class="custom-p modulecard-p">Manage your bank accounts, perform deposition, withdrawal or transfer operations.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Cheque Management</h2>
+                                            <p class="custom-p modulecard-p">Manage inbound and outbound cheques. Cheques are synchronised with bank accounts.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">LC Management</h2>
+                                            <p class="custom-p modulecard-p">Create import and export lc, amend or update lc, make lc payment etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Bank Loan</h2>
+                                            <p class="custom-p modulecard-p">Manage your bank loans, take or return loan from a bank account.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    <!-- end col -->
+</div>
+
+<%- include ../footer.partial.ejs %>
+</body>
+
+</html>

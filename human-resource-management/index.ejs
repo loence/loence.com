@@ -2,138 +2,742 @@
 <html class="no-js" lang="en">
 
 <head>
-	<title>Loence HRM- a customizable human resource management software</title>
-	<meta name="description" content="Loence Human  Resource  Management  system  helps  organizations  to  manage  their
-people to achieve business objectives and maintain employee satisfaction. We offer customization, scalability, ease of use with moderate pricing and reliable support">
-	<% include ../header.partial.ejs %>
+    <title>Loence HRM- a customizable human resource management software</title>
+    <meta name="description" content="Loence Human Resource Management system helps organizations to manage their
+          people to achieve business objectives and maintain employee satisfaction. We offer customization, scalability,
+          ease of use with moderate pricing and reliable support
+    ">
+    <link rel="stylesheet" href="/assets/css/custom-classes.css">
+    <%- include ../header.partial.ejs %>
 
 </head>
 
 <body class="page-preloading bodystyle">
 <!-- Page Pre-Loader -->
 <div class="page-preloader">
-	<div class="preloader">
-		<img src="/assets/images/preloader.gif" alt="Preloader">
-	</div>
+    <div class="preloader">
+        <img src="/assets/images/preloader.gif" alt="Preloader">
+    </div>
 </div>
 <!-- .page-preloader -->
 <!-- navigation panel -->
 <%- include ../navigation.partial.ejs %>
 
-<!-- section text -->
-<section id="project-img" class="no-padding content-top-margin">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-12 col-sm-12 text-center half-project-img wow fadeInDown" style="background-image:url('/assets/images/hrm/hrmodule.jpg');">
-				<div class="opacity-medium bg-dark-gray"></div>
-				<div class="container">
-					<div class="project-header-text">
-						<h1 class="project-title white-text">Loence Human Resource Management</h1>
-						<b class="white-text">A customizable, scalable, easy to use modern HRM solution with reliable support </b>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<!-- row -->
+<div class="row usermanual-body">
+    <%- include('../modules-leftbar.partial.ejs', {activeModule: 'HRM'}) %>
 
-<section id="our-services" class="our-services no-padding bcmodule">
-	<div class="col-md-12">
-		<div class="col-md-5 bg-light-gray padding-five sm-display-table xs-display-inherit xs-text-center cover-background xs-onepage-section">
-		<div class="col-lg-11 col-md-12 pull-right xs-no-padding xs-pull-none">
-			<h1 class="text-transform-none title margin-ten no-margin-lr no-margin-top">Overview</h1>
-			<div class="margin-ten no-margin-lr linehight35 no-margin-top font-22px font-weight-300">Manage and oversee various aspects of employment, administration of employee benefits, and some aspects of recruitment and dismissal.</div>
-			<div class="margin-ten no-margin-lr linehight35 no-margin-top font-22px font-weight-300">Manage wages and salaries evaluating performance, train and plan personnel needs, communicate with all employees at all levels making employees more developed and valuable to the organization.</div>
-		</div>
-	</div>
-		<div class="col-md-7 bg-gray-light padding-five no-padding-left no-padding-bottom sm-padding-bottom-six sm-display-table">
-		<div class="col-lg-11 col-md-12 pull-left xs-no-padding">
-			<h1 class="h1mp text-transform-none title margin-ten no-margin-lr no-margin-top">Business Advantages</h1>
-			<ul>
-				<li class="position-relative font-weight-300 text-extra-large margin-seven-bottom">
-					<div class="number">01.</div>
-					<div><span class="black-text font-weight-700 text-transform-uppercase display-table margin-two-bottom">Employee Satisfaction</span>Employee management using human resource module is transparent to employees of all stages. Every process starting from attendance to salary is automated; therefore there is no room for error.</div>
-				</li>
-				<li class="position-relative font-weight-300 text-extra-large margin-seven-bottom">
-					<div class="number">02.</div>
-					<div><span class="black-text font-weight-700 text-transform-uppercase display-table margin-two-bottom">Performance Improvement</span>While typically managers invest many hours to make payroll sheet calculating various digits and going through attendance books at the start of a month, using ERP managers can spend those hours to do other productive works since payroll sheets are generated automatically.</div>
-				</li>
-				<li class="position-relative font-weight-300 text-extra-large margin-seven-bottom">
-					<div class="number">03.</div>
-					<div><span class="black-text font-weight-700 text-transform-uppercase display-table margin-two-bottom">Budget Control</span>HRM module uses financial information, performance results and historical data from every department. So it helps organizations understand their staffing needs and also prevents understaffing and over hiring.</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	</div>
-	<div class="clearfix"></div>
-</section>
+    <div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+        <aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky
+               data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+            <h4 class="toc-submenu">HRM Features</h4>
+            <ul class="nav nav-list flex-column mb-4 show-bg-active" id="right-menu">
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#first">Recruitment and Hiring</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#second">Employee Data Management</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#third">Benefit and Compensation Management</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#forth">Time Tracking and Attendance System</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#fifth">Employee Appraisal</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#seventh">Payroll Processing</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#eighth">Employee Self Service</a></li>
+            </ul>
+        </aside>
+    </div>
 
 
-<section class="padding-three hback1">
-	<div class="container">
-		<div class="row">
-			<!-- section title -->
-			<div class="col-md-12 col-sm-12">
-				<span class="text-large letter-spacing-2 black-text font-weight-600 agency-title">What Loence ERP "Human Resource Management" Module Provides</span>
-			</div>
-			<!-- end section title -->
+    <div class="col-md-7 col-sm-7 col-xs-12 mob-padding">
+        <section id="project-img" class="no-padding module-content-top-margin">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center half-project-img wow fadeInDown module-half-project-img"
+                         style="background-image:url('/assets/images/hrm/hrmodule.jpg');">
+                        <div class="opacity-medium bg-dark-gray"></div>
+                        <div class="project-header-text">
+                            <h1 class="project-title white-text">Loence Human Resource Management</h1>
+                            <b class="white-text">A customizable, scalable and easy to use modern HRM solution with
+                                reliable support </b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="usermanual-sub-header">What is Human Resource Management?</h2>
+        <p class="usermanual-p">
+            Human resource management (HRM) deals with both the people who work for the organization and the department
+            responsible for managing resources related to the people. Often referred to as personnel management,
+            human resource management involved in overseeing all things related to managing a companies human capital.
+        </p>
+        <h2 class="usermanual-sub-header">Features of Loence Human Resource Management in Bangladesh</h2>
+        <p class="usermanual-p">
+           Loence HRM is a world class human resource management software in Bangladesh. It's cutting edge technology and sophisticated design made Loence HRM easy and comfortable to use.
+            With customizability and scalability ensured we offer following features to manage your human resource with sophistication.
+        </p>
 
-		</div>
-	</div>
-</section>
+        <div class="same-page-link-top-offset" id="first">
+            <h2 class="usermanual-sub-header-2">Recruitment and Hiring</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-355">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Job Requisition</h2>
+                                            <p class="custom-p">HR manager fill out a job requisition form when they wish to
+                                                create a new position or refill and existing,
+                                                vacated position. The job requisition requires approval from higher authorities.
+                                                After the approval the job requisition is used to guide rest of the hiring
+                                                process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-355">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Job Description</h2>
+                                            <p class="custom-p"> A job description summarizes the essential responsibilities,
+                                                activities, qualifications and
+                                                skills for a role. The job description provides enough information for the
+                                                candidates to
+                                                determine if they're qualified for the position. It also defines the baseline
+                                                for applicant evaluation
+                                                process.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
 
-<section class="no-padding-bottom">
-	<div class="container">
-		<div class="row">
-			<!-- section title -->
-			<div class="col-md-12 text-center">
-				<span class="title-med text-uppercase font-weight-600 letter-spacing-3 black-text display-block">Adventure is Everywhere</span>
-			</div>
-			<!-- end section title -->
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="row margin-five no-margin-bottom">
-			<!-- adventure item -->
-			<div class="col-md-3 col-sm-6 no-padding travel-adventure overflow-hidden bg-black position-relative text-center">
-				<a href="/human-resource-management/employee-management.html"><img src="/assets/images/hrm/hrmabout.jpg" alt=""/></a>
-				<a href="/human-resource-management/employee-management.html"><figure class="text-large letter-spacing-3 white-text">Employee management</figure></a>
-			</div>
-			<!-- end adventure item -->
-			<!-- adventure item -->
-			<div class="col-md-3 col-sm-6 no-padding travel-adventure overflow-hidden bg-black position-relative text-center">
-				<a href="/human-resource-management/time-tracking-and-attendance.html"><img src="/assets/images/hrm/time2.jpg" alt=""/></a>
-				<a href="/human-resource-management/time-tracking-and-attendance.html"><figure class="text-large letter-spacing-3 white-text">Time tracking and attendance system</figure></a>
-			</div>
-			<!-- end adventure item -->
-			<!-- adventure item -->
-			<div class="col-md-3 col-sm-6 no-padding travel-adventure overflow-hidden bg-black position-relative text-center">
-				<a href="/human-resource-management/holiday-management.html"><img src="/assets/images/hrm/holiday.jpg" alt=""/></a>
-				<a href="/human-resource-management/holiday-management.html"><figure class="text-large letter-spacing-3 white-text">Holiday management</figure></a>
-			</div>
-			<!-- end adventure item -->
-			<!-- adventure item -->
-			<div class="col-md-3 col-sm-6 no-padding travel-adventure overflow-hidden bg-black position-relative text-center">
-				<a href="/human-resource-management/leave-toil-overtime-management.html"><img src="/assets/images/hrm/leave.jpg" alt=""/></a>
-				<a href="/human-resource-management/leave-toil-overtime-management.html"><figure class="text-large letter-spacing-3 white-text">Leave, Toil, Overtime management </figure></a>
-			</div>
-			<!-- end adventure item -->
-			<!-- adventure item -->
-			<div class="col-md-3 col-sm-6 no-padding travel-adventure overflow-hidden bg-black position-relative text-center">
-				<a href="/human-resource-management/scheduling-and-rostering.html"><img src="/assets/images/hrm/scheduling.jpg" alt=""/></a>
-				<a href="/human-resource-management/scheduling-and-rostering.html"><figure class="text-large letter-spacing-3 white-text">Scheduling and Rostering </figure></a>
-			</div>
-			<!-- end adventure item -->
-			<!-- adventure item -->
-			<div class="col-md-3 col-sm-6 no-padding travel-adventure overflow-hidden bg-black position-relative text-center">
-				<a href="/human-resource-management/payroll-processing.html"><img src="/assets/images/hrm/payroll.jpg" alt=""/></a>
-				<a href="/human-resource-management/payroll-processing.html"><figure class="text-large letter-spacing-3 white-text">Payroll processing</figure></a>
-			</div>
-			<!-- end adventure item -->
-		</div>
-	</div>
-</section>
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-300">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Applicant Evaluation</h2>
+                                            <p class="custom-p">
+                                                Applicant evaluation process helps the employers to find and select the best
+                                                talent possible for an open position. It involves applicant tracking, resume
+                                                management, interviews and background checks.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-300">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Employee Onboarding</h2>
+                                            <p class="custom-p">
+                                                Employee onboarding starts after the selection process is done. It's the process
+                                                of integrating a new
+                                                employee with the company, its processes and culture.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="second">
+            <h2 class="usermanual-sub-header-2">Employee Data Management</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">General Information</h2>
+                                            <p class="custom-p modulecard-p">Employee personal information, educational
+                                                information, contact information, photos and documents are managed
+                                                efficiently.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Company Information</h2>
+                                            <p class="custom-p modulecard-p">This section contains vacation and sick leaves,
+                                                benefit scheme, resume and tracking records, performance
+                                                information, roles and responsibilities etc.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Employee Profile</h2>
+                                            <p class="custom-p modulecard-p">Employee profile is the summary and timeline of all
+                                                factual
+                                                and historical data available to the system.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="third">
+            <h2 class="usermanual-sub-header-2">Benefit and Compensation Management</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Meal Management</h2>
+                                            <p class="custom-p modulecard-p">Track and manage meals and kitchen. Meal charge can be adjusted to salary.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Festival and Performance Bonus</h2>
+                                            <p class="custom-p modulecard-p">Organizations manage their festival bonuses with this feature. Preparing a performance bonus sheet is easier then ever.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Monetary Penalty</h2>
+                                            <p class="custom-p modulecard-p">A manager can penalize an employee for doing anything unethical or damaging. Penalty can be adjusted to salary.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">HR Loan</h2>
+                                            <p class="custom-p modulecard-p">Companies offer one time or month loan to their employees. Monthly loan can be adjusted to payroll.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Advance Salary</h2>
+                                            <p class="custom-p modulecard-p">Paying advance salary to employees and adjustment in salary sheet is easy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Salary Administration</h2>
+                                            <p class="custom-p modulecard-p">Administer salary and other benefits with approval system.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="forth">
+            <h2 class="usermanual-sub-header-2">Time Tracking and Attendance System</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Holiday Calender</h2>
+                                            <p class="custom-p modulecard-p">We offer a sophisticated holiday calender accessible to everyone.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Check In/Out</h2>
+                                            <p class="custom-p modulecard-p">Track how much time employees spending in the office with this feature.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Time Tracking</h2>
+                                            <p class="custom-p modulecard-p">Track attendance and time without any human effort.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Overtime Tracking</h2>
+                                            <p class="custom-p modulecard-p">Overtime management is made easy.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Leave Management</h2>
+                                            <p class="custom-p modulecard-p">Manage paid time of and unpaid leaves with this feature.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Biometric/RFID Attendance Tracking</h2>
+                                            <p class="custom-p modulecard-p">With biometric/RFID attendance tracking in place you never worry about attendance tracking anymore.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Scheduling and Rostering</h2>
+                                            <p class="custom-p modulecard-p">Schedule your working shifts and roster your employee on need.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Attendance Penalty</h2>
+                                            <p class="custom-p modulecard-p">Manager can penalize an employee her attendance for any misdeed.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="fifth">
+            <h2 class="usermanual-sub-header-2">Employee Appraisal</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">360 Feedback</h2>
+                                            <p class="custom-p modulecard-p">This involves getting feedback about employees from their peers, subordinates, supervisor and customers who have interacted during the period.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Goal Setting and Progress Tracking</h2>
+                                            <p class="custom-p modulecard-p">With customized set of key performance indicators, managers can set performance goals for employees and track their progress with visual and comparative reporting.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Behavioral Rating</h2>
+                                            <p class="custom-p modulecard-p">Managers can assess and report behavioral rating for an employee after a specific observation period.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Learning and Professional Development</h2>
+                                            <p class="custom-p modulecard-p">Our learning management system enable you to document, track and report educational courses, training programs, competency test of personnel.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="seventh">
+            <h2 class="usermanual-sub-header-2">Payroll Processing</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Payroll Sheet</h2>
+                                            <p class="custom-p modulecard-p">A payroll sheet is generated automatically calculating attendance, compensation, rewards, advance salary, meal charge, HR loan and other factors. You can print the payroll sheet and export as excel sheet.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Payroll Approval</h2>
+                                            <p class="custom-p modulecard-p">Admins can check and correct the salary sheet. If the salary sheet is ready authority can approve payroll for the particular month.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Salary Disbursement</h2>
+                                            <p class="custom-p modulecard-p">After the salary is approved by authority, salary disbursement comes into play. You can pay with cash, bank or cheque. Our bulk disbursement feature helps to disburse multiple salary at once.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Payroll Accounting</h2>
+                                            <p class="custom-p modulecard-p">Payroll accounting entries are automatically journalized and due salary are converted to payable vouchers.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Salary Slip and Vouchers</h2>
+                                            <p class="custom-p modulecard-p">Salary slips and vouchers are always ready to print.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Payroll Summary</h2>
+                                            <p class="custom-p modulecard-p">A comprehensive summary of payroll is presented with sophisticated visual representation. You can browse payroll history and perform comparison among payroll periods.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="same-page-link-top-offset" id="eighth">
+            <h2 class="usermanual-sub-header-2">Employee Self Service</h2>
+            <div class="col-md-12 no-padding-left no-padding-right">
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Employee Information</h2>
+                                            <p class="custom-p modulecard-p">View and update personal information, educational
+                                                information, contact information, photos and documents are managed
+                                                efficiently. Some updates are subjected to approval from higher authorities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-270">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Monitor Financial Details</h2>
+                                            <p class="custom-p modulecard-p">Employees can monitor benefits, compensation, rewards, loan, expense or other financial details from self service portal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Requesting and Reporting</h2>
+                                            <p class="custom-p modulecard-p">This features enables employees to request paid time off, unpaid leaves, toil or overtime.
+                                                They can report expenses and other activities from the portal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Surveys, Review and Feedback</h2>
+                                            <p class="custom-p modulecard-p">Employees can participate in surveys and reviews. They can access the 360 feedback system from the self service portal.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+                <div class="">
+                    <div class="col-md-6 mobile-no-padding">
+                        <section class="pt0 pb30 " style="background: #fafdff; padding: 0px 0px;">
+                            <div class="col-container">
+                                <div class=" pt30">
+                                    <div class="tour-cate-box-module box-min-height-200">
+                                        <div class="col-md-12 col-xs-12 text-left">
+                                            <h2 class="modulecard-sub-header-2">Access to resource, policies, notices and schedules</h2>
+                                            <p class="custom-p modulecard-p">
+                                                Employee can view schedules, notifications or announcements logging in to the ESS. They have access to shared handbooks, policies and other resources.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    <!-- end col -->
+</div>
+
 <%- include ../footer.partial.ejs %>
 </body>
 

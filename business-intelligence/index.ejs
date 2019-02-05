@@ -1,0 +1,93 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>Loence Business Intelligence Solution</title>
+    <meta name="description" content="Loence Business Intelligence Solution help companies to identify market trends, spot business problems,
+     increase operational efficiency and take on better informed decisions. ">
+    <link rel="stylesheet" href="/assets/css/custom-classes.css">
+    <%- include ../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+    <div class="preloader">
+        <img src="/assets/images/preloader.gif" alt="Preloader">
+    </div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+    <%- include('../modules-leftbar.partial.ejs', {activeModule: 'BI'}) %>
+
+    <div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+        <aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky
+               data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+            <h4 class="toc-submenu">BI Features</h4>
+            <ul class="nav nav-list flex-column mb-4 show-bg-active">
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#first">Executive Dashboards</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#second">Ranking Reports</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#third">What-If Analysis</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#forth">Interactive Reports</a></li>
+                <li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95"
+                                                href="#fifth">Forecasting and Planning</a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+    <div class="col-md-7 col-sm-7 col-xs-12 mob-padding">
+        <section id="project-img" class="no-padding module-content-top-margin">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 text-center half-project-img wow fadeInDown module-half-project-img"
+                         style="background-image:url('/assets/images/businesspng.png');">
+                        <div class="opacity-medium bg-dark-gray"></div>
+                        <div class="project-header-text">
+                            <h1 class="project-title white-text">Loence Business Intelligence</h1>
+                            <b class="white-text">Cutting edge technology, advanced querying and reporting, data mining</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <h2 class="usermanual-sub-header">What is Business Intelligence?</h2>
+        <p class="usermanual-p">
+            Business Intelligence (BI) refers to the tools, technologies, applications and practices used to collect, integrate,
+            analyze, and present an organization’s raw data in order to create insightful and actionable business information.
+        </p>
+        <h2 class="usermanual-sub-header">Features of Loence Business Intelligence Solution in Bangladesh</h2>
+        <p class="usermanual-p">
+            Loence Business Intelligence Solution help companies to identify market trends, spot business problems,
+            increase operational efficiency and take on better informed decisions. Our ever growing list of BI features includes-
+        </p>
+
+
+        <h2 class="usermanual-sub-header-2 same-page-link-top-offset" id="first">Executive Dashboards</h2>
+        <p>See visual display of your companies key performance indicators, financial metrics and other necessary information in customized executive dashboard.</p>
+        <h2 class="usermanual-sub-header-2 same-page-link-top-offset" id="second">Ranking Reports</h2>
+        <p>See which products are earning the most revenue, or which personnel is performing well and who needs attention and so on.</p>
+        <h2 class="usermanual-sub-header-2 same-page-link-top-offset" id="third">What-If Analysis</h2>
+        <p>Analyze how a decision can impact your business with our analysis tool before the actual execution.</p>
+        <h2 class="usermanual-sub-header-2 same-page-link-top-offset" id="forth">Interactive Reports</h2>
+        <p>We provide searchable, sortable, filterable, resizable data grid. This feature rich data grid facilitates excellent interactive reports.</p>
+        <h2 class="usermanual-sub-header-2 same-page-link-top-offset" id="fifth">Forecasting and Planning</h2>
+        <p>Forecast sales, purchase or production need and do planning using the real-time number about your business.</p>
+
+    </div>
+    <!-- end col -->
+</div>
+
+<%- include ../footer.partial.ejs %>
+</body>
+
+</html>
