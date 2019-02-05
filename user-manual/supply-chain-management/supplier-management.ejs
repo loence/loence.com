@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'SCM', activeModule: 'supplier-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#createsupplier">To create a supplier</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#viewsupplier">To view supplier information</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#editsupplier">To edit supplier information</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Supply Chain Management</h2>
+		<h2 class="usermanual-sub-header-2">Supplier Management</h2>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="createsupplier">To create a supplier</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Purchase</b> section and then <b>Suppliers</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button.</li>
+			<li class="usermanual-li">Fill in necessary information.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button. (The button is to be disabled if * marked fields are not filled in properly)</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="viewsupplier">To view supplier information</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Purchase</b> section and then <b>Suppliers</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of suppliers.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/3.png" alt=""/>
+
+			<li class="usermanual-li">From the list, click on the particular supplier to view more information.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/4.png" alt=""/>
+
+			<li class="usermanual-li">To view more suppliers, change <b>Items per Page</b> or go to the next page by clicking on the <b>Next Page</b> icon. You can also search using serial number, name, mobile or email id.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Sort suppliers by name or email alphabetically and by serial number or mobile number numerically by clicking on the particular table head.</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="editsupplier">To edit supplier information</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Purchase</b> section and then <b>Suppliers</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of suppliers.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/3.png" alt=""/>
+
+			<li class="usermanual-li">From the list, click on the particular supplier to view more information.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/5.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Edit Information</b>.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/supplier-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Edit necessary information.</li>
+			<li class="usermanual-li">Click on <b>Update</b> button.</li>
+			
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

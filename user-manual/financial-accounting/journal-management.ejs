@@ -1,0 +1,96 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'FA', activeModule: 'journal-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#viewjournal">To view journal</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#adjustentry">To adjust entry</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Financial Accounting</h2>
+		<h2 class="usermanual-sub-header-2">Journal Management</h2>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="viewjournal">To view journal</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Accounting</b> section and then <b>Journals</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get journals chronologically. Scroll down to view more journals.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Click on any account to see details of that ledger. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/3.png" alt=""/>
+
+			<li class="usermanual-li">Use <b>Ledger Filter</b> option to filter ledgers by entity name, entity and branch.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/4.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="adjustentry">To adjust entry</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Accounting</b> section and then <b>Journals</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Create</b> button.</li>
+			<li class="usermanual-li">Enter title and description of the journal. By default, entry date is to be current date. Use <b>Calendar</b> button to change the entry date.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/5.png" alt=""/>
+
+			<li class="usermanual-li">Select affected account from <b>Select Account</b> dropdown button, enter corresponding amount of the account and select its type (debit and credit).</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Add</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Associate this affected account with entity by clicking on <b>Connect</b> button on the right of affected account.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/8.png" alt=""/>
+
+			<li class="usermanual-li">In Association window, <b>Select Type</b> and <b>Select Entity</b>. Choose between debit and credit. By default, it is to be the type that you selected before. Click on <b>Confirm</b> button. If any mistake is done, click on <b>Remove</b> button on the right of particular line.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/9.png" alt=""/>
+
+			<li class="usermanual-li">Repeat 5 to 8 to add more affected accounts.</li>
+			<li class="usermanual-li">Finally, click on <b>Submit</b> button provided that debit and credit amount are equal. Find the total debit and credit amount at the bottom of page. Submit button will be disabled if debit and credit amounts are not equal.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/10.png" alt=""/>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/financial-accounting/journal-management/11.png" alt=""/>
+
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

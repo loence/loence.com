@@ -1,0 +1,123 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'HRM', activeModule: 'holiday-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#viewholiday">To view holiday</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#addevent">To add event</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#editevent">To edit event</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#deleteevent">To delete event</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Human Resource Management</h2>
+		<h2 class="usermanual-sub-header-2">Holiday Management</h2>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="viewholiday">To view holiday</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Holidays</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/1.png" alt=""/>
+
+			<li class="usermanual-li">The current month calendar will be displayed by default and the current date will be highlighted in the current month calendar. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Use left button on the left of month and year to view previous month’s calendar and use right button on the right of month and year to view next month’s calendar.</li>
+			<li class="usermanual-li">If you want to view current month’s calendar, click on <b>Today</b> button on the right side of the page.</li>
+			<li class="usermanual-li">Holidays is to be marked in the calendar. Move cursor on the marked day to view details about particular holiday.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/3.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="addevent">To add event</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Holidays</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/1.png" alt=""/>
+
+			<li class="usermanual-li">The current month calendar will be displayed by default. Use left button on the left of month and year to view previous month’s calendar and use right button on the right of month and year to view next month’s calendar. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Click on the date in the calendar that you want to add event.</li>
+			<li class="usermanual-li">In Add Event window, type down event title in ‘Event Title’ box. Event date will be the date you chose earlier. Use <b>Calendar</b> button to change event date. Type down description in ‘Comments’ box. Click on <b>Save</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/4.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Save</b> button.</li>
+		</ol>
+		
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="editevent">To edit event</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Holidays</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/1.png" alt=""/>
+
+			<li class="usermanual-li">The current month calendar will be displayed by default. Use left button on the left of month and year to view previous month’s calendar and use right button on the right of month and year to view next month’s calendar. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Click on the date in the calendar that you want to edit.</li>
+			<li class="usermanual-li">In new window, click on <b>Edit</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/5.png" alt=""/>
+
+			<li class="usermanual-li">Edit necessary information. Click on <b>Save</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Save</b> button.</li>
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="deleteevent">To delete event</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Holidays</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/1.png" alt=""/>
+
+			<li class="usermanual-li">The current month calendar will be displayed by default. Use left button on the left of month and year to view previous month’s calendar and use right button on the right of month and year to view next month’s calendar. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Click on the date in the calendar that you want to delete.</li>
+			<li class="usermanual-li">In new window, click on <b>Delete</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/holiday-management/5.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Delete</b> button.</li>
+			<li class="usermanual-li">Click on <b>Save</b> button.</li>
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

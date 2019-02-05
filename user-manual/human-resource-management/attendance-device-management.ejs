@@ -1,0 +1,163 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'HRM', activeModule: 'attendance-device-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#viewdevice">To view attendance device list</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#testdevice">To test connection of attendance device</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#createdevice">To create attendance device</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#editdevice">To edit information of attendance device</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#deletedevice">To delete attendance device</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#exportfromdevice">To export data from attendance device</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Human Resource Management</h2>
+		<h2 class="usermanual-sub-header-2">Attendance Device Management</h2>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="viewdevice">To view attendance device list</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM section</b> and then <b>Devices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of attendance devices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/2.png" alt=""/>
+
+			<li class="usermanual-li">To view more devices, change <b>Items per page</b> or go to the next page by clicking on the <b>Next page</b> icon. Sort the list by title, IP address and port by clicking on respective table head. You can search for specific device using the search box and filter devices using branch.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="testdevice">To test connection of attendance device</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Devices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of attendance devices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Find the device you want to check connection from the list. To view more devices, change <b>Items per page</b> or go to the next page by clicking on the <b>Next page</b> icon. Sort the list by title, IP address and port by clicking on respective table head. You can search for specific device using the search box and filter devices using branch.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on the <b>Fingerprint</b> button on the right side of that particular port number. If the device is properly managed, the button information is to be ‘Connected’. If the connection cannot be created, the button information will be shown as ‘Failed’. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/3.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="createdevice">To create attendance device</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Devices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on the <b>Create</b> button.</li>
+			<li class="usermanual-li">Specify branch from branch list. Type down IP address of your internet network and port number.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/4.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Submit</b> button. You can see the new device in the device list.</li>
+
+		</ol>
+		
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="editdevice">To edit information of attendance device</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Devices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of attendance devices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Find the device of which you want to edit information. To view more devices, change <b>Items per page</b> or go to the next page by clicking on the <b>Next page</b> icon. Sort the list by title, IP address and port by clicking on respective table head. You can search for specific device using the search box and filter devices using branch.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on anywhere in the same row other than buttons.</li>
+			<li class="usermanual-li">In the new window, edit necessary information.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/5.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Submit</b> button.</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="deletedevice">To delete attendance device</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Devices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of attendance devices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Find the device of which you want to delete from the list. To view more devices, change <b>Items per page</b> or go to the next page by clicking on the <b>Next page</b> icon. Sort the list by title, IP address and port by clicking on respective table head. You can search for specific device using the search box and filter devices using branch.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on the <b>Remove</b> button on the right side of that particular device.</li>
+			<li class="usermanual-li">In new dialog box, click on <b>OK</b> button.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/6.png" alt=""/>
+
+			<li class="usermanual-li">Click on Submit button.</li>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="exportfromdevice">To export data from attendance device</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>HRM</b> section and then <b>Devices</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of attendance devices.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Find the device from the list you want to export data from. To view more devices, change <b>Items per page</b> or go to the next page by clicking on the <b>Next page</b> icon. Sort the list by title, IP address and port by clicking on respective table head. You can search for specific device using the search box and filter devices using branch.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Click on the <b>Export</b> button on the right side of that particular device.</li>
+			<li class="usermanual-li">In Export Device Data dialog box, choose the ‘From Date’ and ‘To Date’ using <b>Calendar</b> button on the right side of respective field.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/hrm/attendance-device-management/7.png" alt=""/>
+
+			<li class="usermanual-li">Click on <b>Confirm</b> button.</li>
+			<li class="usermanual-li">A Microsoft excel file will be downloaded. Open it to view details.</li>
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

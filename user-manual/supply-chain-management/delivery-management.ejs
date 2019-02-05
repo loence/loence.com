@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<title>Loence ERP Solution</title>
+	<meta name="description" content="A Bangladeshi ERP solution provider company serving consultancy, software and training to trading, manufacturing and service businesses of all size.
+	Being a cloud application Loence ERP requires minimal infrastructure and affordable budget.">
+	<%- include ../../header.partial.ejs %>
+
+</head>
+
+<body class="page-preloading bodystyle">
+<!-- Page Pre-Loader -->
+<div class="page-preloader">
+	<div class="preloader">
+		<img src="/assets/images/preloader.gif" alt="Preloader">
+	</div>
+</div>
+<!-- .page-preloader -->
+<!-- navigation panel -->
+<%- include ../user-manual-navigation.partial.ejs %>
+
+<!-- row -->
+<div class="row usermanual-body">
+	<%- include('../user-manual-leftbar.partial.ejs', {activeSection: 'SCM', activeModule: 'delivery-management'}) %>
+	<!-- col -->
+	<div class="col-md-2 col-sm-2 mobile-displaynone" style="float: right;">
+		<aside class="sidebar usermanual-rightbar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+			<h4 class="toc-submenu">Contents</h4>
+			<ul class="nav nav-list flex-column mb-4 show-bg-active">
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#viewdelivery">To view delivery list</a></li>
+				<li class="nav-item umrlist"><a class="nav-link inner-link" data-hash data-hash-offset="95" href="#deliveritems">To deliver items</a></li>
+			</ul>
+		</aside>
+	</div>
+
+	<div class="col-md-7 col-sm-7 mob-padding">
+		<h2 class="usermanual-sub-header">Supply Chain Management</h2>
+		<h2 class="usermanual-sub-header-2">Delivery Management</h2>
+
+		
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="viewdelivery">To view delivery list</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Inventory</b> section and then <b>Deliveries</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/delivery-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on the particular tab that the item belongs to. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/warehouse-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of deliveries of particular item type.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/delivery-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Filter to view delivery of a particular branch. Click on the <b>Filter</b> icon and select that branch. (only admin has this authority)</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/warehouse-management/4.png" alt=""/>
+
+			<li class="usermanual-li">To view more items, change <b>Items per Page</b> or go to the next page by clicking on the <b>Next Page</b> icon. You can also search using item name.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+		</ol>
+
+		<p class="usermanual-p font-weight-600 same-page-link-top-offset" id="deliveritems">To deliver items</p>
+
+		<ol class="usermanual-ol">
+			<li class="usermanual-li">Click on <b>Collapse Menu</b> button.</li>
+			<li class="usermanual-li">Click on <b>Inventory</b> section and then <b>Deliveries</b> page.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/delivery-management/1.png" alt=""/>
+
+			<li class="usermanual-li">Click on the particular tab that the item belongs to. </li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/warehouse-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Get a list of deliveries of particular item type.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/delivery-management/2.png" alt=""/>
+
+			<li class="usermanual-li">Filter to view delivery of a particular branch. Click on the <b>Filter</b> icon and select that branch. (only admin has this authority)</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/warehouse-management/4.png" alt=""/>
+
+			<li class="usermanual-li">To view more items, change <b>Items per Page</b> or go to the next page by clicking on the <b>Next Page</b> icon. You can also search using item name.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/item per page.png" alt=""/>
+
+			<li class="usermanual-li">Find desired item and click on Deliver button on the same line.</li>
+			<li class="usermanual-li">In new window, the item and its quantity are shown.</li>
+			<img class="img-responsive usermanual-img" src="/assets/images/user-manual/supply-chain-management/delivery-management/3.png" alt=""/>
+
+			<li class="usermanual-li">Click <b>Confirm</b> button. The item will be deducted from warehouse.</li>
+
+		</ol>
+
+	</div>
+	<!-- end col -->
+</div>
+
+<%- include ../../footer.partial.ejs %>
+</body>
+
+</html>

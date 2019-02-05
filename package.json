@@ -3,7 +3,10 @@
 	"version": "1.0.0-beta",
 	"description": "Loence Website",
 	"scripts": {
-		"build-ejs": "node scripts/build-ejs.js"
+		"build-ejs": "node bin/build-ejs.js",
+		"copy-assets": "node bin/copy-assets.js",
+		"build": "npm run build-ejs && npm run copy-assets",
+		"start": "http-server ./dist"
 	},
 	"repository": {
 		"type": "git",
@@ -22,9 +25,14 @@
 	"dependencies": {
 		"ejs": "^2.6.1",
 		"fs-extra": "^7.0.1",
+		"mkdirp": "^0.5.1",
+		"ncp": "^2.0.0",
 		"webpack": "^4.29.0"
 	},
 	"devDependencies": {
-		"@types/fs-extra": "^5.0.4"
+		"@types/fs-extra": "^5.0.4",
+		"@types/mkdirp": "^0.5.2",
+		"@types/ncp": "^2.0.1",
+		"http-server": "^0.11.1"
 	}
 }
