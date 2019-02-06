@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const mkdirp = require('mkdirp');
 const path = require('path');
 const ejs = require('ejs');
+const minifier = require('html-minifier');
 
 const walkSync = function(dir, filelist = []) {
     const files = fs.readdirSync(dir);
@@ -24,7 +25,7 @@ const ejsFiles = fileList.filter(fileName => {
 });
 
 ejsFiles.forEach(function (ejsFilePath) {
-    ejs.renderFile(ejsFilePath, {}, {}, function (err, str) {
+    ejs.renderFile(ejsFilePath, {}, {}, function (err, htmlContent) {
 
         const outPutHtmlPath = './dist/' + ejsFilePath.split('.ejs').join('.html');
 
@@ -34,7 +35,12 @@ ejsFiles.forEach(function (ejsFilePath) {
                 console.error(err);
             }
 
-            fs.writeFile(outPutHtmlPath, str, function (err) {
+            const minifiedHtmlContent = minifier.minify(htmlContent, {
+                removeComments: true,
+                collapseWhitespace: true
+            });
+
+            fs.writeFile(outPutHtmlPath, minifiedHtmlContent, function (err) {
                 if (err) {
                     console.error(err);
                 }
