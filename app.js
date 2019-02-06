@@ -18,8 +18,8 @@ assets.forEach(assetDir => {
 });
 
 routes.forEach(route => {
-    app.get(route.path, function(req, res, next) {
-        res.render(route.view, {});
+    app.get('/' + route, function(req, res, next) {
+        res.render(route, {});
     });
 });
 
