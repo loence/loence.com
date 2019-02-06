@@ -8644,3 +8644,8 @@ body {
 .pt30 {
     width: 100%;
 }
+
+.phone-footer {
+    text-align: center;
+    color: #888888;
+}
