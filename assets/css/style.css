@@ -8649,3 +8649,7 @@ body {
     text-align: center;
     color: #888888;
 }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
+    cursor: pointer;
+}
