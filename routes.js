@@ -31,6 +31,7 @@ const routes = [
     'user-manual/financial-accounting/voucher-management',
     'blog',
     'about',
+    'loence-erp-modules',
     'executive-board',
     'career',
     'contact'

@@ -8592,6 +8592,10 @@ body {
     min-height: 340px;
 }
 
+.box-min-height-320 {
+    min-height: 320px;
+}
+
 .box-min-height-300 {
     min-height: 300px;
 }
@@ -8648,4 +8652,13 @@ body {
 .phone-footer {
     text-align: center;
     color: #888888;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a.active {
+    cursor: pointer;
+}
+
+.padding-one {
+    padding-top: 1% !important;
+    padding-bottom: 1% !important;
 }
