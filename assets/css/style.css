@@ -8662,3 +8662,7 @@ body {
     padding-top: 1% !important;
     padding-bottom: 1% !important;
 }
+
+.margin-bottom-20px {
+    margin-bottom: 20px;
+}
